@@ -1,5 +1,7 @@
 <?php
 
+// use App\Models\Customer;
+
 return [
 
     /*
@@ -35,7 +37,7 @@ return [
     |
     */
 
-    'guards' => [
+    'guards' => [      
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -62,7 +64,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Customer::class,
         ],
 
         // 'users' => [
